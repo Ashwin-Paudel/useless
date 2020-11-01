@@ -1,4 +1,4 @@
-var allQuestions = "https://raw.githubusercontent.com/Ashwin-Paudel/useless/main/questions.json";
+var allQuestions = "https://raw.githubusercontent.com/Ashwin-Paudel/useless/main/quiz-data.json";
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -78,5 +78,5 @@ xmlhttp.onreadystatechange = function() {
         $("p").html("Error accessing file.");
     } */
 };
-xmlhttp.open("GET", "https://raw.githubusercontent.com/Ashwin-Paudel/useless/main/questions.json", true);
+xmlhttp.open("GET", "https://raw.githubusercontent.com/Ashwin-Paudel/useless/main/quiz-data.json", true);
 xmlhttp.send();
